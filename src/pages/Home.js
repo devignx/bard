@@ -1,48 +1,62 @@
-import bg from '../assets/bard/bg.webp'
-import brd from '../assets/bard/brd.webp'
-import mic from '../assets/bard/mic.webp'
-
 import { useState } from 'react';
+import brd from '../assets/bard/brd.webp'
+import scroll from '../assets/scroll.svg'
+import bg from '../assets/bard/bg.webp'
+import tel from '../assets/icons/tel.webp'
+import dex from '../assets/icons/dex.webp'
+import twt from '../assets/icons/twt.webp'
+import eth from '../assets/icons/eth.webp'
 
 
 const Home = () => {
-    const [popup,setPop] = useState(false);
-    
-    const handleClickOpen = () => {
-        setPop(!popup);
-    }
-    const closePopup = () => {
-        setPop(!popup);
-    }
 
     return(
-        <div className="h-screen w-screen flex flex-col justify-between bg-white relative">
-            <img className=' w-screen' alt='' src={bg} />
-            <div className='absolute top-16 m-auto w-full'> 
-                <img className='m-auto h-[5rem] md:h-[6rem]' alt='' src={brd} />
+        <div className=" relative">
+            <div className='fixed top-10 right-5 '>
+                <a href='/app' className='toppp bg-black/90 transition-all duration-300 ease-in-out hover:bg-black text-white px-8 py-4 rounded-full'>Open App</a>
             </div>
-            <div className='w-full'>
-                <div onClick={handleClickOpen} className='text-center cursor-pointer w-full scale-[66%] transition-all duration-500 ease-in-out py-6 border-solid  m-auto  rounded-2xl'>
-                    <p className='font-bold text-xl text-blue-500'>HINT</p>      
-                    <br/>
-                    <h1 className='text-black/50'>Try Asking</h1>
-                    <p className='font-semibold mt-1 underline shrink-0'>What will be a better society feels like?</p>
+            <section className='h-screen flex flex-col justify-center items-center'>
+                    <img className='w-[10rem]' src={brd} />
+                <div className='text-center'>    
+                    <div>
+                        <p className='rale mt-16 font-black  text-4xl'>BARD AI</p>
+                        <p className='text-black/50 text-sm  mt-2'>Accelerating the development of AI technology</p>
+                    </div>
                 </div>
                 <br/>
-                <div className='relative flex items-center mb-12'>
-                    <img onClick={handleClickOpen} className='topppp absolute right-[10%] md:right-[28%] w-[3rem] m-auto' alt='' src={mic} />
-                    <input onClick={handleClickOpen} type="text" className='rounded-full outline-none p-6 bg-white border-solid border-2 border-black/10 drop-shadow-xl m-auto w-[85%] md:w-[40rem] '  placeholder='Ask your questions'></input>
+                <br/>
+                <a href='#about'><img className='mix-blend-difference w-6 opacity-30' src={scroll} /></a>
+            </section>
+
+            <section id='about' className='relative'>
+                <div>
+                    <h2 className='font-black text-center text-4xl rale'>About BARD-AI</h2>
+                    <p className='w-10/12 md:w-[60%] mt-12 m-auto text-justify md:text-center'>
+                        Technology giants, Microsoft and Google, go head to head in the Artificial Intelligence race as Google anounces the release of BardAI for public access as a response to ChatGBT, the other AI program that is currently open to the public.
+                    </p>
+                    <p className='w-10/12 md:w-[60%] mt-12 m-auto text-justify md:text-center'>
+                        BardAI brings the next step towards accelerating the development of AI technology as it boosts adoption by providing the AI chatbot technology to the millions of Google users around the globe while sparking innovation as further competition continues to happen amongst the tech giants.
+                    </p>
+                    <p className='w-10/12 md:w-[60%] mt-12 m-auto text-justify md:text-center'>
+                        The BARDAI token represents the BardAI project that adopts the Google AI Chatbot, BardAI, and creates further utilities aside from the Chatbot, starting with a telegram bot that can be utilized personally, in groups or channels, both private and public. The BardAI Telegram bot allows users to access the GoogleAI technology which will utilize the extensive data library of the Google search engine!
+                    </p>
+                    <p className='w-10/12 md:w-[60%] mt-12 m-auto text-justify md:text-center'>
+                    Use the BardAI bot today and join the journey of technology's next leap forward with BARDAI, as Google brings the masses to the evergrowing Artificial Intelligence technology.</p>
                 </div>
-            </div>
-            <div  onClick={closePopup} className='fixed topppp'>
-                { popup?
-                    <div className="fixed justify-center items-center text-xs centerh md:text-lg bottom-10 flex flex-row-reverse md:flex-row gap-4 w-10/12 md:w-auto md:right-12 border-[3px] toppp drop-shadow-lg shad border-red-400 bg-white rounded-xl p-5">
-                        <button onClick={closePopup} className="p-3 py-2 md:py-1 rounded-full bg-red-400 text-white">x</button>
-                        <p>Going Live Sooner than you anticipate 😉</p>
-                    </div>
-                :""}
-            </div>
-            
+            </section>
+
+            <section>
+                <div className='flex gap-12 p-12 justify-center mt-12'>
+                    <a className='opacity-80 hover:opacity-100 transition-all duration-300 ease-in-out' href='https://t.me/BardAi_ERC'><img src={tel} /></a>
+                    <a className='opacity-80 hover:opacity-100 transition-all duration-300 ease-in-out' href='https://www.dextools.io/app/en/ether/pair-explorer/0x948b0bab68c1fbd6af824a0ad56513c8dd3bb778'><img src={dex} /></a>
+                    <a className='opacity-80 hover:opacity-100 transition-all duration-300 ease-in-out' href='https://twitter.com/bardai_erc20'><img src={twt} /></a>
+                    <a className='opacity-80 hover:opacity-100 transition-all duration-300 ease-in-out' href='https://etherscan.io/address/0x3b88BB02BD2F50EEdf30DE6B94Cd5351CecD3658'><img src={eth} /></a>
+                </div>
+                <br/>
+                <p className='my-12 text-center text-xs'>Copyrights recieved by BARD AI - 2023</p>
+            </section>
+
+
         </div>
     )
 }
