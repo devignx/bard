@@ -20,7 +20,7 @@ const Bard = () => {
         <div className=" fade-in h-screen w-screen flex flex-col justify-between bg-white relative">
             <img className=' w-screen blur-[2px] noselect' alt='' src={bg} />
             <div className='absolute top-16 m-auto w-full'> 
-                <Link to='/'><img className='m-auto h-[5rem] md:h-[6rem]' alt='' src={brd} /></Link>
+                <Link to='/'><img className='m-auto h-[5rem] md:h-[6rem] noselect' alt='' src={brd} /></Link>
             </div>
             <div className='w-full'>
                 <div onClick={handleClickOpen} className='text-center cursor-pointer w-full scale-[66%] transition-all duration-500 ease-in-out py-6 border-solid  m-auto  rounded-2xl'>
