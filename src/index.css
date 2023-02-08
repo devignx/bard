@@ -53,12 +53,12 @@ body {
 
       ::-moz-selection {
         color: black; 
-        background: #ffffff;
+        background: #ffe958;
       }
 
       ::selection {
         color: black; 
-        background: #ffffff;
+        background: #ffe958;
       }
 
       .noselect {

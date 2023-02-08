@@ -16,8 +16,8 @@ const Bard = () => {
     }
 
     return(
-        <div className="h-screen w-screen flex flex-col justify-between bg-white relative">
-            <img className=' w-screen' alt='' src={bg} />
+        <div className="transition-all duration-300 ease-in-out  h-screen w-screen flex flex-col justify-between bg-white relative">
+            <img className=' w-screen blur-[2px]' alt='' src={bg} />
             <div className='absolute top-16 m-auto w-full'> 
                 <img className='m-auto h-[5rem] md:h-[6rem]' alt='' src={brd} />
             </div>
@@ -29,9 +29,9 @@ const Bard = () => {
                     <p className='font-semibold mt-1 underline shrink-0'>What will be a better society feels like?</p>
                 </div>
                 <br/>
-                <div className='relative flex items-center mb-12'>
+                <div className='relative flex items-center mb-24 md:mb-12'>
                     <img onClick={handleClickOpen} className='topppp absolute right-[10%] md:right-[28%] w-[3rem] m-auto' alt='' src={mic} />
-                    <input onClick={handleClickOpen} type="text" className='rounded-full outline-none p-6 bg-white border-solid border-2 border-black/10 drop-shadow-xl m-auto w-[85%] md:w-[40rem] '  placeholder='Ask your questions'></input>
+                    <input onClick={handleClickOpen} type="text" className='rounded-full outline-none p-6 bg-white  drop-shadow-lg m-auto w-[85%] md:w-[40rem] '  placeholder='Ask your questions'></input>
                 </div>
             </div>
             <div  onClick={closePopup} className='fixed topppp'>
