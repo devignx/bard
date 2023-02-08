@@ -32,16 +32,17 @@ const Home = () => {
                 <div className='mt-12'>
                     <h2 className='font-black text-center text-4xl rale'>About BARD-AI</h2>
                     <p className='w-10/12 md:w-[60%] mt-12 m-auto text-justify md:text-center'>
-                        Technology giants, Microsoft and Google, go head to head in the Artificial Intelligence race as Google anounces the release of BardAI for public access as a response to ChatGBT, the other AI program that is currently open to the public.
+                        Technology giants go head to head in the Artificial Intelligence race as news regarding the release of BardAI for public access as a response to ChatGPT, the other AI program that is currently open to the public, circulates social media outlets stirring excitement and curiosity amongst the masses!
                     </p>
                     <p className='w-10/12 md:w-[60%] mt-12 m-auto text-justify md:text-center'>
-                        BardAI brings the next step towards accelerating the development of AI technology as it boosts adoption by providing the AI chatbot technology to the millions of Google users around the globe while sparking innovation as further competition continues to happen amongst the tech giants.
+                        BardAI brings the next step towards accelerating the development of AI technology as it boosts adoption by providing the AI chatbot technology to millions of users around the globe while sparking innovation as more and more tech giants beging to release more products and services adopting AI technology.
                     </p>
                     <p className='w-10/12 md:w-[60%] mt-12 m-auto text-justify md:text-center'>
-                        The BARDAI token represents the BardAI project that adopts the Google AI Chatbot, BardAI, and creates further utilities aside from the Chatbot, starting with a telegram bot that can be utilized personally, in groups or channels, both private and public. The BardAI Telegram bot allows users to access the GoogleAI technology which will utilize the extensive data library of the Google search engine!
+                        The BARDAI token represents the BardAI project built on the Ethereum Network, BardAI adopts the latest Artificial Intelligence Chatbot technology and creates further utilities aside from the Chatbot, starting with a telegram bot that can be utilized personally, in groups or channels, both private and public. 
                     </p>
                     <p className='w-10/12 md:w-[60%] mt-12 m-auto text-justify md:text-center'>
-                    Use the BardAI bot today and join the journey of technology's next leap forward with BARDAI, as Google brings the masses to the evergrowing Artificial Intelligence technology.</p>
+                        The BardAI Telegram bot allows users to access the rapidly growing Artificial Intelligence technology which utilizes the extensive data libraries and machine learning algorithms that tech giants provided in order for AI to exponentially grow in response to public demand.Use the BardAI bot today and join the journey of technology's next leap forward with BARDAI, as the masses utilize the ever growing Artificial Intelligence technology and evolve!
+                    </p>
                 </div>
             </section>
 
