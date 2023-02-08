@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom'
 const Home = () => {
 
     return(
-        <div className=" relative transition-all duration-300 ease-in-out ">
+        <div className=" relative fade-in ">
             <div className='toppp fixed top-10 right-5 '>
                 <Link to='/app' className='bg-black transition-all duration-300 ease-in-out hover:bg-black/80 text-white px-8 py-4 rounded-full'>Open App</Link>
             </div>
